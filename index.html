@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="d-flex bg-secondary-subtle pb-5">
+      <!-- sidebar -->
+      <div
+        class="w-25 vh-100 d-flex flex-column justify-content-start mt-5 gap-4"
+      >
+        <div>
+          <p class="bg-primary ps-3 py-2 w-75 rounded-end-pill text-light">
+            <i class="bi bi-house-door me-2"></i> Dashboard
+          </p>
+          <p class="ps-3">
+            <i class="bi bi-person-fill-gear me-2"></i> Account Settings
+          </p>
+        </div>
+
+        <div class="ps-3">
+          <div class="d-flex justify-content-start text-muted gap-2 w-75">
+            <p>PAGES</p>
+            <hr class="flex-fill" />
+          </div>
+          <div>
+            <p><i class="bi bi-box-arrow-in-right me-2"></i> Login</p>
+            <p><i class="bi bi-person-plus me-2"></i> Register</p>
+            <p><i class="bi bi-exclamation-circle me-2"></i> Error</p>
+          </div>
+        </div>
+
+        <div class="ps-3">
+          <div class="d-flex justify-content-start text-muted gap-2 w-75">
+            <p class="">USER INTERFACE</p>
+            <hr class="flex-fill" />
+          </div>
+          <div>
+            <p><i class="bi bi-type me-2"></i> Typography</p>
+            <p><i class="bi bi-diagram-2-fill me-2"></i> Icons</p>
+            <p><i class="bi bi-credit-card me-2"></i> Cards</p>
+            <p><i class="bi bi-table me-2"></i> Tables</p>
+            <p><i class="bi bi-box me-2"></i> Form Layouts</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- main content -->
+      <div class="flex-fill pe-5 pt-4 d-flex flex-column gap-4 text-light">
+        <div class="row gap-3">
+          <div class="col-4 p-3 card">
+            <div
+              class="h-100 d-flex flex-column justify-content-between align-items-baseline"
+            >
+              <div>
+                <p class="mb-1 h4">Congratulations John</p>
+                <p class="m-0 text-muted">Best Seller of the month</p>
+              </div>
+              <div>
+                <p class="mb-3 h2">$42.8k</p>
+                <button
+                  class="bg-primary text-white border-0 px-3 py-1 rounded"
+                >
+                  View Sales
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-7 card flex-fill p-3 d-flex flex-column justify-content-between"
+          >
+            <p class="mb-2 h4">Statistics Card</p>
+            <p><strong>Total 48.5% growth</strong> 😎 this month</p>
+            <div class="d-flex justify-content-between gap-2">
+              <div class="d-flex align-items-center flex-fill">
+                <div class="me-2">
+                  <div
+                    class="h4 w-100 bg-primary p-2 rounded me-2 text-white text-center"
+                  >
+                    <i class="fa-solid fa-arrow-trend-up"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 text-muted">Sales</p>
+                  <p class="h5">245k</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center flex-fill">
+                <div class="me-2">
+                  <div
+                    class="h4 w-100 bg-success p-2 rounded me-2 text-white text-center"
+                  >
+                    <i class="fa-regular fa-user"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 text-muted">Customers</p>
+                  <p class="h5">12.5k</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center flex-fill">
+                <div class="me-2">
+                  <div
+                    class="h4 w-100 bg-warning p-2 rounded me-2 text-white text-center"
+                  >
+                    <i class="fa-solid fa-laptop-file"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 text-muted">Products</p>
+                  <p class="h5">1.54k</p>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center flex-fill">
+                <div class="me-2">
+                  <div
+                    class="h4 w-100 bg-info p-2 rounded me-2 text-white text-center"
+                  >
+                    <i class="fa-solid fa-dollar"></i>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 text-muted">Revenue</p>
+                  <p class="h5">$88k</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gap-3">
+          <!-- weekly overview -->
+          <div class="col-4 h-100 card p-3">
+            <div
+              class="d-flex w-100 align-items-center justify-content-between"
+            >
+              <p class="mb-1 h4">Weekly Overview</p>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="d-flex flex-column h-100 w-100 gap-2">
+               <div class="h-100 w-100 mt-4">
+                  <canvas id="myChart"></canvas>
+               </div>
+               <div class="d-flex justify-content-between align-items-center gap-2">
+                  <p class="h3">45%</p>
+                  <p class="text-muted">Your sales performance is 45% 😎 better compared to last month</p>
+               </div>
+               <button class="bg-primary border-0 rounded py-2 text-white">DETAILS</button>
+            </div>
+          </div>
+
+          <!-- Total Earning & 4 grid section -->
+          <div class="col-7 row gap-3 flex-fill">
+            <div class="col p-3 card h-auto">
+              <div class="d-flex flex-column gap-3 align-items-baseline">
+                <div
+                  class="d-flex w-100 align-items-center justify-content-between"
+                >
+                  <p class="mb-1 h4">Total Earning</p>
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <div class="d-flex gap-1 align-items-center">
+                    <p class="m-0 h2">$24,895</p>
+                    <p class="m-0">10%</p>
+                  </div>
+                  <p>Compared to $84,325 last year</p>
+                </div>
+
+                <div class="w-100 h-25 d-flex flex-column gap-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 h-100"
+                  >
+                    <div class="d-flex flex-fill gap-2">
+                      <p class="m-0 bg-info p-2 h4 rounded w-25 text-center">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </p>
+                      <div>
+                        <p class="m-0 h5">Zipcar</p>
+                        <p class="m-0 text-muted">VueJS, React & HTML</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex h-100 flex-column justify-content-between"
+                    >
+                      <p class="m-0">$24,895.65</p>
+                      <hr class="m-0" />
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 h-100"
+                  >
+                    <div class="d-flex flex-fill gap-2">
+                      <p class="m-0 bg-info p-2 h4 rounded w-25 text-center">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </p>
+                      <div>
+                        <p class="m-0 h5">Zipcar</p>
+                        <p class="m-0 text-muted">VueJS, React & HTML</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex h-100 flex-column justify-content-between"
+                    >
+                      <p class="m-0">$24,895.65</p>
+                      <hr class="m-0" />
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center w-100 h-100"
+                  >
+                    <div class="d-flex flex-fill gap-2">
+                      <p class="m-0 bg-info p-2 h4 rounded w-25 text-center">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                      </p>
+                      <div>
+                        <p class="m-0 h5">Zipcar</p>
+                        <p class="m-0 text-muted">VueJS, React & HTML</p>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex h-100 flex-column justify-content-between"
+                    >
+                      <p class="m-0">$24,895.65</p>
+                      <hr class="m-0" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col d-flex flex-column h-auto gap-3 p-0">
+              <div class="d-flex p-0 w-100 gap-3 m-0">
+                <div class="col d-flex flex-column gap-3 card h-100 p-3">
+                  <div
+                    class="d-flex align-items-baseline justify-content-between w-100"
+                  >
+                    <i
+                      class="fa-solid bg-success p-2 rounded-circle text-white fa-chart-simple"
+                    ></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p class="m-0">Total Profit</p>
+                    <div class="d-flex gap-1">
+                      <p class="h4">$25.6k</p>
+                      <p class="text-success">+42%</p>
+                    </div>
+                    <p>weekly profit</p>
+                  </div>
+                </div>
+
+                <div class="col d-flex flex-column gap-3 card h-100 p-3">
+                  <div
+                    class="d-flex align-items-baseline justify-content-between w-100"
+                  >
+                    <i
+                      class="fa-solid bg-secondary p-2 w-25 text-center rounded-circle text-white fa-dollar"
+                    ></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p class="m-0">Refunds</p>
+                    <div class="d-flex gap-1">
+                      <p class="h4">$78</p>
+                      <p class="text-danger">-15%</p>
+                    </div>
+                    <p>weekly profit</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="d-flex p-0 w-100 gap-3 m-0">
+                <div class="col d-flex flex-column gap-3 card w-50 h-100 p-3">
+                  <div
+                    class="d-flex align-items-baseline justify-content-between w-100"
+                  >
+                    <i
+                      class="fa-solid bg-primary p-2 rounded-circle text-white fa-briefcase"
+                    ></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p class="m-0">Total Profit</p>
+                    <div class="d-flex gap-1">
+                      <p class="h4">$25.6k</p>
+                      <p class="text-success">+42%</p>
+                    </div>
+                    <p>weekly profit</p>
+                  </div>
+                </div>
+
+                <div class="col d-flex flex-column gap-3 card h-100 w-50 p-3">
+                  <div
+                    class="d-flex align-items-baseline justify-content-between w-100"
+                  >
+                    <i
+                      class="fa-solid bg-warning p-2 rounded-circle text-white fa-circle-question"
+                    ></i>
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p class="m-0">Sales Queries</p>
+                    <div class="d-flex gap-1">
+                      <p class="h4">15</p>
+                      <p class="text-danger">-18%</p>
+                    </div>
+                    <p class="text-muted">Last Week</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gap-3">
+          <!-- sales by country -->
+          <div class="col-4 card p-4">
+            <div
+              class="d-flex w-100 align-items-center justify-content-between"
+            >
+              <p class="mb-1 h4">Sales by Countries</p>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+
+            <div class="d-flex flex-column gap-3 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                  <p class="m-0 p-2 bg-success rounded-circle text-white">US</p>
+                  <div>
+                    <div class="d-flex gap-2">
+                      <p class="m-0 h4">$8,656k</p>
+                      <p class="m-0 text-success">
+                        <i class="fa-solid fa-chevron-up"></i> 25.8%
+                      </p>
+                    </div>
+                    <p class="m-0 text-muted">USA</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 h5">894k</p>
+                  <p class="m-0 text-muted">Sales</p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-3">
+                  <p class="m-0 p-2 bg-danger rounded-circle text-white">UK</p>
+                  <div>
+                    <div class="d-flex gap-2">
+                      <p class="m-0 h4">$2,415k</p>
+                      <p class="m-0 text-danger">
+                        <i class="fa-solid fa-chevron-down"></i> 6.2%
+                      </p>
+                    </div>
+                    <p class="m-0 text-muted">UK</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 h5">645k</p>
+                  <p class="m-0 text-muted">Sales</p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center gap-4">
+                  <p class="m-0 p-2 bg-warning rounded-circle text-white">IN</p>
+                  <div>
+                    <div class="d-flex gap-2">
+                      <p class="m-0 h4">$865k</p>
+                      <p class="m-0 text-success">
+                        <i class="fa-solid fa-chevron-up"></i> 12.4%
+                      </p>
+                    </div>
+                    <p class="m-0 text-muted">India</p>
+                  </div>
+                </div>
+                <div>
+                  <p class="m-0 h5">148k</p>
+                  <p class="m-0 text-muted">Sales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- deposit and withdraw -->
+          <div class="col card d-flex flex-row gap-2 p-3">
+            <div class="w-50 p-2">
+              <div
+                class="d-flex w-100 align-items-center justify-content-between"
+              >
+                <p class="mb-1 h4">Deposit</p>
+                <p class="m-0 text-muted">View All</p>
+              </div>
+
+              <div class="d-flex flex-column gap-3 w-100 mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="https://pbs.twimg.com/media/DyWXd86UwAAsLM-.png"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                    <div>
+                      <p class="m-0 h6">Gumroad Account</p>
+                      <p class="m-0 text-muted">Sell UI Kit</p>
+                    </div>
+                  </div>
+                  <p class="m-0 h6 text-success">+$4,650</p>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                    <div>
+                      <p class="m-0 h6">Mastercard</p>
+                      <p class="m-0 text-muted">Wallet deposit</p>
+                    </div>
+                  </div>
+                  <p class="m-0 h6 text-success">+$92,705</p>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="https://cdn.icon-icons.com/icons2/2699/PNG/512/stripe_logo_icon_167962.png"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                    <div>
+                      <p class="m-0 h6">Stripe Account</p>
+                      <p class="m-0 text-muted">iOS Application</p>
+                    </div>
+                  </div>
+                  <p class="m-0 h6 text-success">+$957</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                width: 1px;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.1);
+              "
+            ></div>
+
+            <div class="w-50 p-2">
+              <div
+                class="d-flex w-100 align-items-center justify-content-between"
+              >
+                <p class="mb-1 h4">Withdraw</p>
+                <p class="m-0 text-muted">View All</p>
+              </div>
+
+              <div class="d-flex flex-column gap-3 w-100 mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="https://ubs.iilm.edu/wp-content/uploads/2016/03/Google-logo.png"
+                      style="object-fit: cover"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                    <div>
+                      <p class="m-0 h6">Google Adsense</p>
+                      <p class="m-0 text-muted">Paypal Deposit</p>
+                    </div>
+                  </div>
+                  <p class="m-0 h6 text-danger">-$145</p>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                    <div>
+                      <p class="m-0 h6">Github Enterprise</p>
+                      <p class="m-0 text-muted">Security & Compliance</p>
+                    </div>
+                  </div>
+                  <p class="m-0 h6 text-danger">-$1870</p>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex align-items-center gap-3">
+                    <img
+                      src="https://static.surveysparrow.com/site/assets/integrations/inner/slack.png"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                    <div>
+                      <p class="m-0 h6">Upgrade Slack Plan</p>
+                      <p class="m-0 text-muted">Debit card deposit</p>
+                    </div>
+                  </div>
+                  <p class="m-0 h6 text-danger">-$597</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- chartjs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+      const ctx = document.getElementById('myChart');
+    
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1,
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+    </script>
+
+    <!-- Bootstrap Javascript CDN -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
